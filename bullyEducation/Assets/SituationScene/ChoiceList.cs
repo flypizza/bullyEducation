@@ -6,7 +6,7 @@ public class ChoiceList : MonoBehaviour
 {
     public Transform parent;
     public GameObject listItem;
-
+    public Text txt_situation;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +23,12 @@ public class ChoiceList : MonoBehaviour
         return xmlManager;
     }
     public void SetList() {
+        SituationData situationData  = FindObjectOfType<SaveHandler>().CUR_SITU;
+        txt_situation.text = situationData.situation;
+
+
         List<ChoiceData> situationDatas = GetXmlManager().choiceDatas;
-        string cur_key = FindObjectOfType<SaveHandler>().CUR_SITU_KEY;
+        string cur_key = situationData.key;
         foreach (ChoiceData data in situationDatas) {
             if(data.situation_key == cur_key)
             {

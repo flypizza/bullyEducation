@@ -180,10 +180,10 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 0fc87143342f8a24a80c15cbfcd7ef39, type: 3}
     m_FontSize: 60
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 70
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

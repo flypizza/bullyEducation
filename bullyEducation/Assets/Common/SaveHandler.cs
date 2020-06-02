@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class SaveHandler : MonoBehaviour
 {
-    string curSitu_key = "MONEY_STEAL";
+    SituationData situationData;
     private void Awake()
     {
         DontDestroyOnLoad(this);
     }
-    public string CUR_SITU_KEY 
+    public SituationData CUR_SITU
     {
         get
         {
-            return curSitu_key;
+            return situationData;
         }
         set
         {
-            curSitu_key = value;
+            situationData = value;
         }
     }
     ChoiceData curSelect_ChoiceData = null;

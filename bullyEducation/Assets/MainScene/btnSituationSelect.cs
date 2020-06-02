@@ -22,8 +22,10 @@ public class btnSituationSelect : MonoBehaviour
         curData = data;
         if (data == null)
         {
-            txt_btn.text = "to be continue";
+            txt_btn.text = "Coming\nSoon";
+            txt_btn.fontSize = 45;
             btn.enabled = false;
+            GetComponent<Image>().color = new Color(0.0f, 0.0f, 0.0f, 0.3f);
         }
         else
         {
@@ -37,7 +39,7 @@ public class btnSituationSelect : MonoBehaviour
     {
         if(curData != null)
         {
-            FindObjectOfType<SaveHandler>().CUR_SITU_KEY = curData.key;
+            FindObjectOfType<SaveHandler>().CUR_SITU = curData;
             SceneManager.LoadScene("SituationScene");
         }
     }

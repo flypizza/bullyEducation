@@ -21,9 +21,10 @@ public class AdmobScript : MonoBehaviour
     private void Start()
     {
         MobileAds.Initialize(initStatus => { });
-        //MobileAds.Initialize(App_ID);
+        MobileAds.Initialize(App_ID);
 
         RequestBanner();
+        ShowBannerAd();
     }
 
     private void RequestBanner()
