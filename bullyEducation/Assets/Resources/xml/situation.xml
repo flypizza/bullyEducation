@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<text>
+		<no>1</no>
+		<key>MONEY_STEAL</key>
+		<situation>막다른 골목에서 일진을 만났다. 나의 돈을 뺏으려고 한다. 어떻게 할까?</situation>
+	</text>
+	<text>
+		<no>2</no>
+		<key>BEAT_MY_FRIEND</key>
+		<situation>화장실에 들어갔는데, 일진이 친구를 때리고 있다. 어떻게 할까?</situation>
+	</text>
+	<text>
+		<no>3</no>
+		<key>SHUTTLE</key>
+		<situation>쉬는 시간에 일진이 다가와서는 쪼꼬에몽을 사오라고 한다. 어떻게 할까?</situation>
+	</text>
+	<text>
+		<no>4</no>
+		<key>HARASSMENT</key>
+		<situation>만날 때마다 나의 뒤통수를 때리는 일진이 있다. 어떻게 할까?</situation>
+	</text>
+</Root>
